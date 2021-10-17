@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marksheet</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="marksheet">
+    <h1>Student Data</h1>
+
+    <form id="myform">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="subject">Favourite Subject</label>
+        <input type="text" id="subject" name="subject"><br><br>
+        <label for="language">Tamil</label>
+        <input type="number"  class="max-lgth" id="tamil" name="language">
+        <label for="english">English</label>
+        <input type="number" min="0" max="100" oninput="validity.valid||(value='');" class="max-lgth" id="english" name="english">     
+        <label for="maths">Maths</label>
+        <input type="number" min="0" max="100" oninput="validity.valid||(value='');" class="max-lgth" id="maths" name="maths">
+        <label for="science">Science</label>
+        <input type="number" min="0" max="100" oninput="validity.valid||(value='');" class="max-lgth" id="science" name="science">  
+        <label for="social">Social</label>
+        <input type="number" min="0" max="100" oninput="validity.valid||(value='');" class="max-lgth" id="social" name="social"><br><br>
+        <!-- submit button -->
+        <input type="submit" value="Submit" id="form-btn">
+      </form>
+
+      <div class="error-message">Please provide marks only in positive numbers</div>
+
+      <a style="position: relative;left: 60%;;" href="./localStorage.html">Click here to move to localstorage page</a>
+
+      <table id="myTable">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Subject</th>
+            <th>Tamil</th>  
+            <th>English</th>
+            <th>Maths</th>  
+            <th>Science</th>  
+            <th>Social</th>
+            <th>Total Marks</th> 
+            <th>Average</th>
+            <th>Pass/Fail</th>
+            <th style="color: green;">Edit Record</th>
+            <th style="color: red;">Delete Record</th>
+          </tr> 
+        </thead>
+        <tbody>
+        
+        </tbody>
+        </table>
+
+
+    <!-- Script section -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
