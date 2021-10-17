@@ -1,0 +1,18 @@
+.error-message{
+    display: none;
+    color: red;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid yellowgreen;
+  }
+
+td{
+    text-align: center;
+    width: 75px;
+}
+
+#myTable{
+    margin-top: 20px;
+}
